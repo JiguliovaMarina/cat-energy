@@ -1,0 +1,94 @@
+.radio {
+  min-height: 30px;
+}
+
+.radio__label {
+  display: inline-block;
+  padding-left: 45px;
+  position: relative;
+  font-family: $oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+  text-transform: uppercase;
+  padding-top: 7px;
+}
+
+.radio__label::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.radio__label::after {
+  content: "";
+  background: #68b738;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  display: none;
+}
+
+.radio__input:checked + .radio__label::after {
+  display: block;
+}
+
+.radio:hover .radio__label::before {
+  border: 1px solid #000000;
+}
+
+.radio__input:focus + .radio__label::before {
+  border: 1px solid #000000;
+}
+
+.radio__input:disabled + .radio__label {
+  opacity: 0.3;
+}
+
+.radio__input:disabled:hover + .radio__label::before {
+  border-color: #cdcdcd;
+}
+
+@media (min-width: $tablet) {
+  .radio__label {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 60px;
+  }
+
+  .radio__label::before {
+    width: 38px;
+    height: 38px;
+    top: 1px;
+  }
+
+  .radio__label::after {
+    width: 18px;
+    height: 18px;
+    top: 12px;
+    left: 11px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .radio__label {
+    padding-left: 61px;
+  }
+
+  .radio__label::before {
+    left: 1px;
+  }
+
+  .radio__label::after {
+    left: 12px;
+  }
+}

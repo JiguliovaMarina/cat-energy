@@ -1,0 +1,28 @@
+.comment {
+  margin-bottom: 23px;
+}
+
+.comment__title {
+  margin-bottom: 39px;
+}
+
+@media (min-width: $tablet) {
+  .comment__title {
+    margin-bottom: 87px;
+  }
+
+  .comment {
+    margin-bottom: 66px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .comment {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .comment__title {
+    margin-bottom: 78px;
+  }
+}

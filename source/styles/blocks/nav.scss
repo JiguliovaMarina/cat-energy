@@ -1,0 +1,59 @@
+.nav {
+  position: relative;
+}
+
+.nav__toggle {
+  position: absolute;
+  top: -45px;
+  right: 21px;
+  width: 24px;
+  height: 24px;
+  background: url("../../images/icons1/menu.svg") no-repeat center center;
+  border: none;
+  display: none;
+  cursor: pointer;
+}
+
+.nav--js .nav__toggle {
+  display: block;
+}
+
+.nav--js .nav__list {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.nav--open .nav__list {
+  display: block;
+}
+
+.nav--open .nav__toggle {
+  background: url("../../images/icons1/close.svg") no-repeat center center;
+}
+
+@media (min-width: $tablet) {
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav--js .nav__list {
+    display: flex;
+    position: relative;
+  }
+
+  .nav--open .nav__list {
+    display: flex;
+  }
+
+  .nav--js .nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .nav--js .nav__list {
+    background-color: transparent;
+  }
+}

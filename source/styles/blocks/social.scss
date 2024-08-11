@@ -1,0 +1,35 @@
+.social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  padding: 12px 12px 0 11px;
+  margin: 0 0 44px;
+  flex-wrap: wrap;
+}
+
+.social__link {
+  display: block;
+  color: #666666;
+}
+
+.social__link:hover {
+  color: #68b738;
+}
+
+.social__link:focus {
+  outline: none;
+  color: #68b738;
+}
+
+.social__link:active {
+  opacity: 0.6;
+}
+
+@media (min-width: $tablet) {
+  .social {
+    padding: 5px 0 0 42px;
+    margin: 0;
+    max-width: 400px;
+  }
+}

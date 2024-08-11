@@ -1,0 +1,33 @@
+.data {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.data__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+@media (min-width: $tablet) {
+  .data__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .data {
+    border: none;
+  }
+
+  .data__list {
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .data {
+    max-width: 570px;
+  }
+
+  .data__list {
+    margin: 0;
+    min-width: 570px;
+  }
+}

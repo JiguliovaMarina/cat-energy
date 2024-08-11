@@ -1,0 +1,252 @@
+.offer {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.offer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.offer__item {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  margin: 0 20px 20px;
+  padding: 30px 0 19px;
+  position: relative;
+}
+
+.offer__item::before {
+  content: "";
+  background-color: #68b738;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 24px;
+  left: 20px;
+}
+
+.offer__item--slim::after {
+  content: "";
+  background: url("../../images/icons1/slim.svg") no-repeat center center;
+  width: 36px;
+  height: 50px;
+  position: absolute;
+  top: 21px;
+  left: 27px;
+}
+
+.offer__item--gain::after {
+  content: "";
+  background: url("../../images/icons1/gain.svg") no-repeat left center;
+  width: 67px;
+  height: 28px;
+  position: absolute;
+  top: 34px;
+  left: 13px;
+}
+
+.offer__title {
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 auto 30px;
+  padding: 0  20px 0 90px;
+  font-family: $oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  max-width: 350px;
+  box-sizing: border-box;
+}
+
+.offer__text {
+  color: #444444;
+  margin: 0 20px 18px;
+  padding: 0 0 23px;
+  min-width: 240px;
+  text-transform: none;
+  font-family: $lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  position: relative;
+}
+
+.offer__text::before {
+  content: "";
+  border-top: 1px solid #d9d9d9;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.offer__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: $oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  margin: 0 0 0 21px;
+  padding-right: 52px;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+}
+
+.offer__link::after {
+  content: "";
+  background: url("../../images/icons1/arrow.svg") no-repeat right center;
+  width: 24px;
+  height: 10px;
+  position: absolute;
+  top: 2px;
+  left: calc(100% - 35px);
+}
+
+.offer__link:hover::after,
+.offer__link:focus::after {
+  width: 32px;
+  transition: all 0.5s ease;
+}
+
+.offer__link:focus {
+  outline: none;
+  outline-offset: 3px;
+}
+
+.offer__link:active {
+  outline: none;
+  opacity: 0.4;
+}
+
+.offer__link:active::after {
+  opacity: 0.4;
+}
+
+@media (min-width: $tablet) {
+  .offer__list {
+    margin: 0 0 44px;
+  }
+
+  .offer__item {
+    margin: 0 30px 30px;
+    padding: 77px 310px 56px 53px;
+  }
+
+  .offer__item::before {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    right: 63px;
+    left: auto;
+  }
+
+  .offer__item--slim::after {
+    width: 140px;
+    height: 194px;
+    top: 81px;
+    right: 93px;
+    left: auto;
+  }
+
+  .offer__item--gain::after {
+    width: 268px;
+    height: 112px;
+    top: 135px;
+    left: auto;
+    right: 29px;
+  }
+
+  .offer__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 23px;
+    padding: 0;
+    max-width: 500px;
+  }
+
+  .offer__text {
+    margin: 0 0 31px;
+    padding: 0 0 23px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 770px;
+  }
+
+  .offer__text::before {
+    display: none;
+  }
+
+  .offer__link {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .offer__link::after {
+    top: 9px;
+    left: calc(100% - 27px);
+  }
+}
+
+@media (min-width: $desktop) {
+  .offer {
+    margin: 0 0 70px;
+    width: 100%;
+  }
+
+  .offer__list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+  }
+
+  .offer__item {
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 77px 63px 58px 52px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .offer__item::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .offer__item--slim::after {
+    width: 70px;
+    height: 97px;
+    top: 41px;
+    left: 67px;
+  }
+
+  .offer__item--gain::after {
+    width: 134px;
+    height: 56px;
+    top: 67px;
+    left: 33px;
+  }
+
+  .offer__title {
+    padding-left: 162px;
+    margin-bottom: 73px;
+  }
+
+  .offer__text {
+    margin: 0 0 28px;
+    padding: 0;
+  }
+}

@@ -1,0 +1,38 @@
+.program {
+  padding-top: 21px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.program__item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+@media (min-width: $tablet) {
+  .program__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .program {
+    border: none;
+    padding: 0;
+    margin-bottom: 39px;
+  }
+
+  .program__list {
+    border: 1px solid #d9d9d9;
+    padding: 21px 26px 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .program {
+    max-width: 570px;
+  }
+
+  .program__list {
+    margin: 0;
+    min-width: 516px;
+    padding: 23px 26px 28px;
+  }
+}

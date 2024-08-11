@@ -1,0 +1,42 @@
+.developer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.developer__text {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  color: #444444;
+  cursor: pointer;
+}
+
+.developer__img {
+  display: block;
+  margin-top: -7px;
+  padding-left: 11px;
+  color: #666666;
+}
+
+.developer__img:hover {
+  color: #68b738;
+}
+
+.developer__img:focus {
+  outline: none;
+  color: #68b738;
+}
+
+.developer__img:active {
+  opacity: 0.6;
+}
+
+@media (min-width: $tablet) {
+  .developer__img {
+    margin-top: -2px;
+  }
+
+  .developer__text {
+    margin: 5px 13px;
+  }
+}

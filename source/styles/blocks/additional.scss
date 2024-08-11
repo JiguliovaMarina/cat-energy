@@ -1,0 +1,48 @@
+.additional {
+  margin: 0 0 23px;
+}
+
+.additional__title {
+  margin: 0 0 34px;
+}
+
+.additional__item {
+  margin: 0 0 12px;
+}
+
+
+@media (min-width: $tablet) {
+  .additional {
+    margin-bottom: 56px;
+  }
+
+  .additional__title {
+    margin-bottom: 55px;
+  }
+
+  .additional__list {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 344px auto;
+    margin: 0 auto 0 70px;
+    gap: 36px 0;
+  }
+
+  .additional__item {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .additional {
+    width: 100%;
+    margin-bottom: 64px;
+  }
+
+  .additional__list {
+    display: grid;
+    grid-template-columns: 325px 325px 325px 325px;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}

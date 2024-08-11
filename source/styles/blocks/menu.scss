@@ -1,0 +1,90 @@
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #e6e6e6;
+  display: block;
+}
+
+.menu__item {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #111111;
+  font-family: $oswald;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 24px 0 20px;
+  display: block;
+  text-align: center;
+}
+
+.menu__link:hover {
+  opacity: 0.8;
+}
+
+.menu__link:focus {
+  opacity: 0.8;
+  outline: none;
+}
+
+.menu__link:active {
+  opacity: 0.5;
+}
+
+@media (min-width: $tablet) {
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: auto;
+    column-gap: 34px;
+    max-width: 500px;
+    border: none;
+  }
+
+  .menu__item {
+    border: none;
+  }
+
+  .menu__link {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px 0;
+  }
+
+  .menu__active {
+    border-bottom: 2px solid #68b738;
+  }
+}
+
+@media (min-width: $desktop) {
+  .menu__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .menu__active--desktop {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .menu__link--desktop {
+    color: #ffffff;
+  }
+
+  .menu__link--desktop:hover {
+    opacity: 0.4;
+  }
+
+  .menu__link--desktop:focus {
+    opacity: 0.6;
+  }
+
+  .menu__link--desktop:active {
+    opacity: 0.9;
+  }
+}

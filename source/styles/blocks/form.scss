@@ -1,0 +1,94 @@
+.form {
+  margin-bottom: 31px;
+}
+
+.form__group {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 20px;
+}
+
+.form__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form__button {
+  width: calc(100% - 40px);
+  margin-bottom: 20px;
+}
+
+.form__info {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+  .form {
+    margin-bottom: 38px;
+  }
+
+  .form__list {
+    margin: 0 70px;
+  }
+
+  .form__wrapper {
+    margin: 0 145px 0 50px;
+  }
+
+  .form__info {
+    padding-top: 15px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .form__button {
+    width: auto;
+    min-width: 284px;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 80px;
+    margin-bottom: 79px;
+  }
+
+  .form__conatiner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .form__list {
+    margin-left: 109px;
+  }
+
+  .form__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    gap: 80px;
+    justify-content: flex-start;
+  }
+
+  .form__button {
+    min-width: 570px;
+    max-width: 650px;
+  }
+}
